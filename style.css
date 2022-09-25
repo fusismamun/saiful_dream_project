@@ -1,0 +1,8 @@
+html, 
+body{
+    background-color: #ffff;
+    text-rendering: optimizeLegibility;
+}
+#header {
+    background: black;
+}
