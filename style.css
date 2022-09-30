@@ -1,8 +1,115 @@
-html, 
-body{
-    background-color: #ffff;
-    text-rendering: optimizeLegibility;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#header {
-    background: black;
+
+/* Navigation Menu user photo  */
+
+.create-post-header img {
+    width: 40px;
+    border-radius: 90%;
+    margin-left: 50px;
 }
+
+/* Middle Create Post field style  */
+.create-post{
+    margin-top: 20px;
+    background: #fff;
+    
+}
+.create-post-input {
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-input img {
+    width: 40px;
+    border-radius: 90%;
+    margin-right: 10px;
+}
+
+.create-post-input textarea{
+        width: 100%;
+        border: 0;
+        outline: 0;
+        resize: none;
+        background: transparent;
+        margin-top: 8px;
+
+}
+
+.create-post-link {
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-link img {
+    width: 15px;
+    margin-right: 5px;
+}
+.create-post-link li {
+    list-style: none;
+    border-top:1px solid  #ccc;
+    border-right: 1px solid #ccc;
+    flex-basis: 37%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.create-post-link li:last-child {
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+
+/* Profile Categories  */
+
+.sidebar-profile-box {
+ background: #fff;
+ position:sticky;
+}
+
+.sidebar-profile-info{
+    padding: 0 25px;
+}
+
+.sidebar-profile-info img {
+    width: 90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+}
+
+.sidebar-profile-info h1 {
+    font-size: 25px;
+}
+.sidebar-profile-info h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+}
+
+.sidebar-profile-info ul {
+    list-style: none;
+    margin: 20px -30px;
+}
+
+.sidebar-profile-info ul li {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.sidebar-profile-info ul li span{
+    font-weight: bold;
+}
+
+
+
+/* Responsive Section  */
