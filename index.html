@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Project</title>
+    <!-- FontAwsome Kite  -->
+    <script src="https://kit.fontawesome.com/63b5b152ff.js" crossorigin="anonymous"></script>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="style.css">
 
@@ -21,31 +23,43 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand" href="#">Side Image</a>
+              <a class="navbar-brand fw-bold  border-bottom border-info" href="#">Education</a>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto fw-bold">
+                <ul class="navbar-nav mb-2 mb-lg-0  fw-bold">
                   <li class="nav-item">
-                    <a class="nav-link  text-dark"  href="#">Home</a>
+                    <a class="nav-link ms-5"  href="#"><i class="fa-solid fa-house"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2  text-dark" href="#">Notice</a>
+                    <a class="nav-link mx-3" href="#"><i class="fa-solid fa-envelope"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  text-dark" href="#">Suggestion</a>
+                    <a class="nav-link me-5 " href="#"><i class="fa-solid fa-bell"></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2  text-dark" href="#">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link  text-dark" href="#">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="create-post-header">
-                        <img src="image/man.png">
-                    </div>
+                </ul>
+                
+                  <form class="mx-auto d-flex">
+                    <input class="form-control inputsm" style="width: 28em;" type="search" placeholder="Search" aria-label="Search">
+                    
+                  </form>
+                
+                <ul class="navbar-nav ">
+                  <!-- dropdown menu  -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item " href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Setting</a></li>
+                      <li><a class="dropdown-item" href="#">Help</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                   </li>
                   
-                </ul>
+                <li class="nav-item">
+                  <a class="nav-link  text-dark" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </li>
+              </ul>
               </div>
             </div>
           </nav>

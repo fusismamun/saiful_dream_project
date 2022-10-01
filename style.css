@@ -12,6 +12,11 @@
     border-radius: 90%;
     margin-left: 50px;
 }
+ .nav-link:hover {
+    color: #19D3AE !important;
+}
+
+
 
 /* Middle Create Post field style  */
 .create-post{
@@ -109,6 +114,7 @@
 .sidebar-profile-info ul li span{
     font-weight: bold;
 }
+
 
 
 
