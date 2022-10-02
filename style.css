@@ -16,6 +16,9 @@
     color: #19D3AE !important;
 }
 
+#stories ul li {
+    list-style: none;
+}
 
 
 /* Middle Create Post field style  */
