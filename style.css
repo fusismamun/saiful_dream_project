@@ -20,6 +20,9 @@
     list-style: none;
 }
 
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
 
 /* Middle Create Post field style  */
 .create-post{
