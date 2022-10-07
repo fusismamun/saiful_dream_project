@@ -73,7 +73,7 @@
       <div class="row">
         <div class="col  mt-3 sticky-top">
           <!-- Profile Catagories  -->
-          <div class="card rounded" style="width: 16rem;">
+          <div class="card rounded border-0 shadow" style="width: 16rem;">
             <img style="width: 150px;" src="image/man.png" class="card-img-top ms-5 mt-2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Student Name </h5>
@@ -89,7 +89,7 @@
           </div>
           <br>
           <!-- Menu Categories -->
-          <div class="card  rounded" style="width: 16rem;">
+          <div class="card border-0 shadow  rounded" style="width: 16rem;">
             
             <div class="card-body">
               <h5 class="card-title">Catagories</h5>
@@ -282,12 +282,28 @@
                         <p class="m-0">2 Comments</p>
                       </div>
                     </h2>
-                    <hr />
+                    <hr class="mt-4"/>
                     <!-- comment & like bar -->
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex justify-content-around ">
                       <div
                         class="
-                          dropdown-item
+                         
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-muted
+                          p-1
+                          
+                        "
+                      >
+                      <i class="fa-regular fa-heart me-3"></i>
+                        <p class="m-0">Favor</p>
+                      </div>
+                      <div
+                        class="
+                         
                           rounded
                           d-flex
                           justify-content-center
@@ -297,12 +313,44 @@
                           p-1
                         "
                       >
-                        <i class="fas fa-thumbs-up me-3"></i>
-                        <p class="m-0">Like</p>
+                      <ul class="comment-section">
+                        <!-- dropdown menu  -->
+                        <li class=" dropdown">
+                          <a class="nav-link dropdown text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div
+                        class="
+                         
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-muted
+                          p-1
+                          mt-3
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                      <i class="fa-regular fa-message me-3"></i>
+                        <p class="m-0">Convey</p>
+                      </div>
+                            
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item " href="#"><i class="fa-solid fa-share me-1"></i>Share With Your Thought</a></li>
+                            <li><a class="dropdown-item " href="#">User Message Section</a></li>
+                            
+                          </ul>
+                        </li>
+                      </ul>
                       </div>
                       <div
                         class="
-                          dropdown-item
+                         
                           rounded
                           d-flex
                           justify-content-center
@@ -316,7 +364,7 @@
                         aria-expanded="false"
                         aria-controls="collapsePost1"
                       >
-                        <i class="fas fa-comment-alt me-3"></i>
+                      <i class="fa-regular fa-comments me-3"></i>
                         <p class="m-0">Comment</p>
                       </div>
                     </div>
@@ -332,16 +380,7 @@
                         <!-- comment 1 -->
                         <div class="d-flex align-items-center my-1">
                           <!-- avatar -->
-                          <img
-                            src="https://source.unsplash.com/collection/happy-people"
-                            alt="avatar"
-                            class="rounded-circle me-2"
-                            style="
-                              width: 38px;
-                              height: 38px;
-                              object-fit: cover;
-                            "
-                          />
+                          
                           <!-- comment text -->
                           <div class="p-3 rounded comment__input w-100">
                             <!-- comment menu of author -->
@@ -388,60 +427,37 @@
                                 </li>
                               </ul>
                             </div>
-                            <p class="fw-bold m-0">John</p>
-                            <p class="m-0 fs-7 bg-gray p-2 rounded">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipiscing elit.
-                            </p>
+                            
                           </div>
                         </div>
                         <!-- comment 2 -->
-                        <div class="d-flex align-items-center my-1">
-                          <!-- avatar -->
-                          <img
-                            src="https://source.unsplash.com/random/2"
-                            alt="avatar"
-                            class="rounded-circle me-2"
-                            style="
-                              width: 38px;
-                              height: 38px;
-                              object-fit: cover;
-                            "
-                          />
-                          <!-- comment text -->
-                          <div class="p-3 rounded comment__input w-100">
-                            <p class="fw-bold m-0">Jerry</p>
-                            <p class="m-0 fs-7 bg-gray p-2 rounded">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipiscing elit.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- create comment -->
-                        <form class="d-flex my-1">
-                          <!-- avatar -->
-                          <div>
-                            <img
-                              src="https://source.unsplash.com/collection/happy-people"
-                              alt="avatar"
-                              class="rounded-circle me-2"
-                              style="
-                                width: 38px;
-                                height: 38px;
-                                object-fit: cover;
-                              "
-                            />
-                          </div>
-                          <!-- input -->
-                          <input
-                            type="text"
-                            class="form-control border-0 rounded-pill bg-gray"
-                            placeholder="Write a comment"
-                          />
-                        </form>
+                        
+                        
                         <!-- end -->
                       </div>
                     </div>
+                    <!-- create comment -->
+                    <form class="d-flex my-1">
+                      <!-- avatar -->
+                      <div>
+                        <img
+                          src="https://source.unsplash.com/collection/happy-people"
+                          alt="avatar"
+                          class="rounded-circle me-2"
+                          style="
+                            width: 38px;
+                            height: 38px;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                      <!-- input -->
+                      <input
+                        type="text"
+                        class="form-control border-0 rounded-pill bg-gray"
+                        placeholder="Write a comment"
+                      />
+                    </form>
                   </div>
                 </div>
                 <!-- end -->
@@ -450,6 +466,8 @@
           </div>
           <br>
           <!-- Post -2  -->
+          <br><br>
+          <!-- Post -1  -->
           <div class="bg-white p-4 rounded shadow mt-0">
             <!-- author -->
             <div class="d-flex justify-content-between">
@@ -462,7 +480,7 @@
                   style="width: 38px; height: 38px; object-fit: cover"
                 />
                 <div>
-                  <p class="m-0 fw-bold">John</p>
+                  <p class="m-0 fw-bold">Kazi Saiful</p>
                   <span class="text-muted fs-7">July 17 at 1:23 pm</span>
                 </div>
               </div>
@@ -565,12 +583,28 @@
                         <p class="m-0">2 Comments</p>
                       </div>
                     </h2>
-                    <hr />
+                    <hr class="mt-4"/>
                     <!-- comment & like bar -->
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex justify-content-around ">
                       <div
                         class="
-                          dropdown-item
+                         
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-muted
+                          p-1
+                          
+                        "
+                      >
+                      <i class="fa-regular fa-heart me-3"></i>
+                        <p class="m-0">Favor</p>
+                      </div>
+                      <div
+                        class="
+                         
                           rounded
                           d-flex
                           justify-content-center
@@ -580,12 +614,44 @@
                           p-1
                         "
                       >
-                        <i class="fas fa-thumbs-up me-3"></i>
-                        <p class="m-0">Like</p>
+                      <ul class="comment-section">
+                        <!-- dropdown menu  -->
+                        <li class=" dropdown">
+                          <a class="nav-link dropdown text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div
+                        class="
+                         
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-muted
+                          p-1
+                          mt-3
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                      <i class="fa-regular fa-message me-3"></i>
+                        <p class="m-0">Convey</p>
+                      </div>
+                            
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item " href="#"><i class="fa-solid fa-share me-1"></i>Share With Your Thought</a></li>
+                            <li><a class="dropdown-item " href="#">User Message Section</a></li>
+                            
+                          </ul>
+                        </li>
+                      </ul>
                       </div>
                       <div
                         class="
-                          dropdown-item
+                         
                           rounded
                           d-flex
                           justify-content-center
@@ -599,7 +665,7 @@
                         aria-expanded="false"
                         aria-controls="collapsePost1"
                       >
-                        <i class="fas fa-comment-alt me-3"></i>
+                      <i class="fa-regular fa-comments me-3"></i>
                         <p class="m-0">Comment</p>
                       </div>
                     </div>
@@ -615,16 +681,7 @@
                         <!-- comment 1 -->
                         <div class="d-flex align-items-center my-1">
                           <!-- avatar -->
-                          <img
-                            src="https://source.unsplash.com/collection/happy-people"
-                            alt="avatar"
-                            class="rounded-circle me-2"
-                            style="
-                              width: 38px;
-                              height: 38px;
-                              object-fit: cover;
-                            "
-                          />
+                          
                           <!-- comment text -->
                           <div class="p-3 rounded comment__input w-100">
                             <!-- comment menu of author -->
@@ -671,60 +728,37 @@
                                 </li>
                               </ul>
                             </div>
-                            <p class="fw-bold m-0">John</p>
-                            <p class="m-0 fs-7 bg-gray p-2 rounded">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipiscing elit.
-                            </p>
+                            
                           </div>
                         </div>
                         <!-- comment 2 -->
-                        <div class="d-flex align-items-center my-1">
-                          <!-- avatar -->
-                          <img
-                            src="https://source.unsplash.com/random/2"
-                            alt="avatar"
-                            class="rounded-circle me-2"
-                            style="
-                              width: 38px;
-                              height: 38px;
-                              object-fit: cover;
-                            "
-                          />
-                          <!-- comment text -->
-                          <div class="p-3 rounded comment__input w-100">
-                            <p class="fw-bold m-0">Jerry</p>
-                            <p class="m-0 fs-7 bg-gray p-2 rounded">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipiscing elit.
-                            </p>
-                          </div>
-                        </div>
-                        <!-- create comment -->
-                        <form class="d-flex my-1">
-                          <!-- avatar -->
-                          <div>
-                            <img
-                              src="https://source.unsplash.com/collection/happy-people"
-                              alt="avatar"
-                              class="rounded-circle me-2"
-                              style="
-                                width: 38px;
-                                height: 38px;
-                                object-fit: cover;
-                              "
-                            />
-                          </div>
-                          <!-- input -->
-                          <input
-                            type="text"
-                            class="form-control border-0 rounded-pill bg-gray"
-                            placeholder="Write a comment"
-                          />
-                        </form>
+                        
+                        
                         <!-- end -->
                       </div>
                     </div>
+                    <!-- create comment -->
+                    <form class="d-flex my-1">
+                      <!-- avatar -->
+                      <div>
+                        <img
+                          src="https://source.unsplash.com/collection/happy-people"
+                          alt="avatar"
+                          class="rounded-circle me-2"
+                          style="
+                            width: 38px;
+                            height: 38px;
+                            object-fit: cover;
+                          "
+                        />
+                      </div>
+                      <!-- input -->
+                      <input
+                        type="text"
+                        class="form-control border-0 rounded-pill bg-gray"
+                        placeholder="Write a comment"
+                      />
+                    </form>
                   </div>
                 </div>
                 <!-- end -->
@@ -825,9 +859,6 @@
               </ul>
             </div>
           </div>
-
-         
-          
         </div>
       </div>
      

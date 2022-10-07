@@ -23,6 +23,9 @@
 .dropdown:hover .dropdown-menu{
     display: block;
 }
+.comment-section{
+    list-style: none;
+}
 
 /* Middle Create Post field style  */
 .create-post{
@@ -78,6 +81,8 @@
     color: white;
     font-weight: bold;
 }
+
+
 
 /* Profile Categories  */
 
