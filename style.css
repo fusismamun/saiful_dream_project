@@ -126,7 +126,9 @@
     font-weight: bold;
 }
 
-
+footer a {
+    text-decoration: none;
+}
 
 
 /* Responsive Section  */
